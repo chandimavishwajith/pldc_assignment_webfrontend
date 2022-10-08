@@ -4,8 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import DashboardHeader from "../../components/DashboardHeader";
+import SideBar from '../../components/Sidebar';
+import sidebar_menu from '../../constants/routes';
+import "../styles.css";
 
-const ViewModuleList = ({ toggleSideBar }) => {
+
+const LecViewAssignment = () => {
   const [posts, setPosts] = useState([]);
   const [attendence, setAttendence] = useState([]);
   useEffect(() => {
@@ -18,24 +22,28 @@ const ViewModuleList = ({ toggleSideBar }) => {
       .catch((err) => {
         console.log(err.message);
       });
-    toggleSideBar();
   }, []);
 
   return (
     <>
+          <div className="dashboard-container">
+        <SideBar menu={sidebar_menu} />
+        <div className="dashboard-body">
+
       <div className="dashboard-content">
         <DashboardHeader />
 
         <div className="dashboard-content-container">
           <div className="dashboard-content-header">
-            <h2>View Module List</h2>
+            <h2>View Assignment</h2>
           </div>
           <rb.Table className="table table-hover table-bordered" responsive>
             <thead>
-              <th>Module ID</th>
-              <th>Module Name</th>
-              <th>Lecturer Name</th>
-              <th>Sessions</th>
+              <th>Assignment ID</th>
+              <th>Assignment Name</th>
+              <th>Student ID</th>
+              <th>Student Name</th>
+              <th>Time Submitted</th>
               <th>Actions</th>
             </thead>
 
@@ -54,24 +62,32 @@ const ViewModuleList = ({ toggleSideBar }) => {
                   <td>
                     <span>dhftjftj</span>
                   </td>
-                  
                   <td>
-                    <rb.Button
-                      variant="dark"
-                      type="submit"
-                      className="btn btn-sm"
-                    >
-                      Enroll
-                    </rb.Button>
+                    <span>dhftjftj</span>
+                  </td>
+
+                  <td>
+                    
+                    
+                    <Link to="/lecturer/add-marks">
+                      <rb.Button
+                        variant="warning"
+                        type="submit"
+                        className="btn btn-sm"
+                      >
+                        Marks
+                      </rb.Button>
+                    </Link>
                   </td>
                 </>
               </tr>
             </tbody>
           </rb.Table>
         </div>
+      </div></div>
       </div>
     </>
   );
 };
 
-export default ViewModuleList;
+export default LecViewAssignment;

@@ -4,8 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import DashboardHeader from "../../components/DashboardHeader";
+import SideBar from '../../components/Sidebar';
+import sidebar_menu from '../../constants/routes';
+import "../styles.css";
 
-const ViewModuleListLec = ({ toggleSideBar }) => {
+
+const StuViewModuleList = () => {
   const [posts, setPosts] = useState([]);
   const [attendence, setAttendence] = useState([]);
   useEffect(() => {
@@ -18,11 +22,14 @@ const ViewModuleListLec = ({ toggleSideBar }) => {
       .catch((err) => {
         console.log(err.message);
       });
-    toggleSideBar();
   }, []);
 
   return (
     <>
+          <div className="dashboard-container">
+        <SideBar menu={sidebar_menu} />
+        <div className="dashboard-body">
+
       <div className="dashboard-content">
         <DashboardHeader />
 
@@ -69,9 +76,10 @@ const ViewModuleListLec = ({ toggleSideBar }) => {
             </tbody>
           </rb.Table>
         </div>
+      </div></div>
       </div>
     </>
   );
 };
 
-export default ViewModuleListLec;
+export default StuViewModuleList;

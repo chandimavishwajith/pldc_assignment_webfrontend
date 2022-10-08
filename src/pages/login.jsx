@@ -17,10 +17,12 @@ const Login = () => {
       .catch((err) => {
         console.log(err.message);
       });
+      
   }, []);
 
   return (
     <>
+   
       <div className="login-content">
         <div className="login-content-container">
           <div className="login-content-header">
@@ -53,6 +55,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+     
     </>
   );
 };
