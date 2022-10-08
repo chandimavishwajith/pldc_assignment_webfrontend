@@ -2,15 +2,17 @@ import React from 'react';
 
 import './styles.css';
 
-function DashboardHeader ({ btnText, onClick }) {
+
+function DashboardHeader () {
     return(
         <div className='dashbord-header-container'>
-            {btnText && 
-                <button className='dashbord-header-btn' onClick={onClick}>{btnText}</button>
-            }
-
+            
             <div className='dashbord-header-right'>
-                
+                Admin&emsp;
+                <img
+                    alt="profile"
+                    className='dashbord-header-avatar'
+                    src='https://reqres.in/img/faces/9-image.jpg' />
             </div>
         </div>
     )

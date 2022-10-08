@@ -5,8 +5,9 @@ import SideBarItem from './sidebar-item';
 
 import './styles.css';
 import logo from '../../assets/images/white-logo.png';
+import LogoutIcon from '../../assets/icons/logout.svg';
 
-function SideBar ({ menu }) {
+const SideBar = ({ menu }) => {
     const location = useLocation();
 
     const [active, setActive] = useState(1);
@@ -30,7 +31,7 @@ function SideBar ({ menu }) {
                     <img
                         src={logo}
                         alt="logo"
-                        
+                       
                          />
                 </div>
 
@@ -44,7 +45,13 @@ function SideBar ({ menu }) {
                             </div>
                         ))}
                     </div>
-
+                    <div className='sidebar-footer'>
+                        <span className='sidebar-item-label'>Logout</span>
+                        <img 
+                            src={LogoutIcon}
+                            alt='icon-logout'
+                            className='sidebar-item-icon' />
+                    </div>
                     
                 </div>
             </div>

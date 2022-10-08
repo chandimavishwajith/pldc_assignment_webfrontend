@@ -6,6 +6,7 @@
 }
 .dashboard-content-container {
     margin: 1em;
+    margin-top: 2.5rem;
     background-color: white;
     border: none;
     border-radius: 10px;
