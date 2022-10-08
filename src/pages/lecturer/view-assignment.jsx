@@ -32,7 +32,7 @@ const ViewAssignment = ({ toggleSideBar }) => {
           </div>
           <rb.Table className="table table-hover table-bordered" responsive>
             <thead>
-            <th>Assignment ID</th>
+              <th>Assignment ID</th>
               <th>Assignment Name</th>
               <th>Student ID</th>
               <th>Student Name</th>
@@ -58,7 +58,7 @@ const ViewAssignment = ({ toggleSideBar }) => {
                   <td>
                     <span>dhftjftj</span>
                   </td>
-                  
+
                   <td>
                     <rb.Button
                       variant="primary"
@@ -67,6 +67,16 @@ const ViewAssignment = ({ toggleSideBar }) => {
                     >
                       Download
                     </rb.Button>
+                    &nbsp;
+                    <Link to="/lecturer/add-marks">
+                      <rb.Button
+                        variant="warning"
+                        type="submit"
+                        className="btn btn-sm"
+                      >
+                        Marks
+                      </rb.Button>
+                    </Link>
                   </td>
                 </>
               </tr>

@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import * as rb from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const Login = () => {
-  
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -16,35 +17,39 @@ const Login = () => {
       .catch((err) => {
         console.log(err.message);
       });
-      
   }, []);
 
   return (
     <>
-      <div className="dashboard-content">
-        <div className="dashbord-header-container">
-          <Link className="nav-link" to="/upload">
-            <Button variant="primary" size="md">
-              Upload File
-            </Button>
-          </Link>
-          <div className="dashbord-header-right"></div>
-        </div>
-        <div className="dashboard-content-container">
-          <div className="dashboard-content-header">
-            <h2>Lectures</h2>
+      <div className="login-content">
+        <div className="login-content-container">
+          <div className="login-content-header">
+            <h2>Login</h2>
           </div>
-          <div className="d-grid gap-3">
-            
-            {posts.map((module) => {
-              return (
-                <Link className="nav-link" to={"/dates?module=" + module}>
-                  <Button variant="secondary" size="lg" className="w-100">
-                    {module}
-                  </Button>
-                </Link>
-              );
-            })}
+          <div className="d-grid gap-1">
+            <rb.Form>
+              
+                <rb.Form.Group className="mb-3" controlId="rb.FormBasicEmail">
+                  <rb.Form.Label className="login-content-label">
+                    Username
+                  </rb.Form.Label>
+                  <rb.Form.Control type="email" />
+                </rb.Form.Group>
+              
+                <rb.Form.Group className="mb-3" controlId="rb.FormBasicEmail">
+                  <rb.Form.Label className="login-content-label">
+                    Password
+                  </rb.Form.Label>
+                  <rb.Form.Control type="password" />
+                </rb.Form.Group>
+              
+              <Col md className="text-center my-4">
+                <Button type="submit" size="md" className="btn w-100 login-button">
+                  Log In
+                </Button>
+              </Col>
+              
+            </rb.Form>
           </div>
         </div>
       </div>

@@ -14,6 +14,7 @@ import ViewModuleListLec from './pages/lecturer/view-modulelist';
 import CreateContent from './pages/lecturer/create-content';
 import UploadAssignment from './pages/lecturer/upload-assignment';
 import ViewAssignment from './pages/lecturer/view-assignment';
+import AddMarks from './pages/lecturer/add-marks';
 
 
 
@@ -37,6 +38,8 @@ function App() {
             <Route exact path="/lecturer/create-content" element={<CreateContent toggleSideBar={handleToggleSideBar} />} />
             <Route exact path="/lecturer/upload-assignment" element={<UploadAssignment toggleSideBar={handleToggleSideBar} />} />
             <Route exact path="/lecturer/view-assignment" element={<ViewAssignment toggleSideBar={handleToggleSideBar} />} />
+            <Route exact path="/lecturer/add-marks" element={<AddMarks toggleSideBar={handleToggleSideBar} />} />
+
             <Route exact path="/student/view-modulelist" element={<ViewModuleList toggleSideBar={handleToggleSideBar} />} />
             <Route exact path="/lecturer/view-modulelist" element={<ViewModuleListLec toggleSideBar={handleToggleSideBar} />} />
             
