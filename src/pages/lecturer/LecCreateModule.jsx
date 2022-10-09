@@ -7,7 +7,7 @@ import DashboardHeader from "../../components/DashboardHeader";
 import SideBar from "../../components/Sidebar";
 import "../styles.css";
 
-const CreateContent = () => {
+const LecCreateModule = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const CreateContent = () => {
 
             <div className="dashboard-content-container">
               <div className="dashboard-content-header">
-                <h2>Create Content</h2>
+                <h2>Create Module</h2>
               </div>
               <div className="d-grid gap-3">
                 <rb.Form>
@@ -42,7 +42,7 @@ const CreateContent = () => {
                         className="mb-3"
                         controlId="rb.FormBasicEmail"
                       >
-                        <rb.Form.Label>Lecture Topic</rb.Form.Label>
+                        <rb.Form.Label>Module Topic</rb.Form.Label>
                         <rb.Form.Control type="email" />
                       </rb.Form.Group>
                     </Col>
@@ -51,7 +51,7 @@ const CreateContent = () => {
                         className="mb-3"
                         controlId="rb.FormBasicEmail"
                       >
-                        <rb.Form.Label>Lecture Description</rb.Form.Label>
+                        <rb.Form.Label>Module Description</rb.Form.Label>
                         <rb.Form.Control
                           as="textarea"
                           style={{ height: "100px" }}
@@ -102,19 +102,7 @@ const CreateContent = () => {
                         </rb.Form.Select>
                       </rb.Form.Group>
                     </Col>
-                    <Col md>
-                      <rb.Form.Group
-                        className="mb-3"
-                        controlId="rb.FormBasicEmail"
-                      >
-                        <rb.Form.Label>Upload Files</rb.Form.Label>
-                        <rb.Form.Control
-                          type="file"
-                          multiple
-                          accept="application/pdf, image/*"
-                        />
-                      </rb.Form.Group>
-                    </Col>
+                    
                   </Row>
                   <Col className="form-btn text-center">
                     <rb.Button
@@ -135,4 +123,4 @@ const CreateContent = () => {
   );
 };
 
-export default CreateContent;
+export default LecCreateModule;

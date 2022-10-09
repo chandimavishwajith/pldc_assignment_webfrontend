@@ -7,7 +7,7 @@ import DashboardHeader from "../../components/DashboardHeader";
 import SideBar from "../../components/Sidebar";
 import "../styles.css";
 
-const AdminViewStudent = () => {
+const AdminViewLecturer = () => {
   const [posts, setPosts] = useState([]);
   const [attendence, setAttendence] = useState([]);
   useEffect(() => {
@@ -32,7 +32,7 @@ const AdminViewStudent = () => {
 
             <div className="dashboard-content-container">
               <div className="dashboard-content-header">
-                <h2>View Student</h2>
+                <h2>View Lecturer</h2>
               </div>
               <rb.Table className="table table-hover table-bordered" responsive>
                 <thead>
@@ -83,4 +83,4 @@ const AdminViewStudent = () => {
   );
 };
 
-export default AdminViewStudent;
+export default AdminViewLecturer;

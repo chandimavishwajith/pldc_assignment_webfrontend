@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import DashboardHeader from "../../components/DashboardHeader";
 import SideBar from "../../components/Sidebar";
-import sidebar_menu from "../../constants/routes";
 import "../styles.css";
 
 const AddMarks = () => {
@@ -26,7 +25,7 @@ const AddMarks = () => {
   return (
     <>
       <div className="dashboard-container">
-        <SideBar menu={sidebar_menu} />
+        <SideBar  />
         <div className="dashboard-body">
           <div className="dashboard-content">
             <DashboardHeader />
@@ -34,6 +33,7 @@ const AddMarks = () => {
             <div className="dashboard-content-container">
               <div className="dashboard-content-header">
                 <h2>Add Marks</h2>
+
                 <rb.Button
                   variant="primary"
                   type="submit"
@@ -64,7 +64,6 @@ const AddMarks = () => {
                       </rb.Form.Group>
                     </Col>
                   </Row>
-
                   <Row className="g-2">
                     <Col md>
                       <rb.Form.Group
@@ -85,14 +84,25 @@ const AddMarks = () => {
                       </rb.Form.Group>
                     </Col>
                   </Row>
-
-                  <rb.Button
-                    variant="secondary"
-                    type="submit"
-                    className="btn btn-lg"
-                  >
-                    Submit
-                  </rb.Button>
+                  <Col className="form-btn text-center">
+                    <rb.Button
+                      variant="secondary"
+                      type="submit"
+                      className="btn btn-lg w-25"
+                    >
+                      Submit
+                    </rb.Button>
+                    &emsp;
+                    <Link to="/lecturer/LecViewAssignment">
+                      <rb.Button
+                        variant="dark"
+                        type="submit"
+                        className="btn btn-lg w-25"
+                      >
+                        Back
+                      </rb.Button>
+                    </Link>
+                  </Col>
                 </rb.Form>
               </div>
             </div>

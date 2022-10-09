@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
 import DashboardHeader from "../../components/DashboardHeader";
 import SideBar from "../../components/Sidebar";
-import sidebar_menu from "../../constants/routes";
 import "../styles.css";
 
 const AddStudent = () => {
@@ -26,7 +25,7 @@ const AddStudent = () => {
   return (
     <>
       <div className="dashboard-container">
-        <SideBar menu={sidebar_menu} />
+        <SideBar  />
         <div className="dashboard-body">
           <div className="dashboard-content">
             <DashboardHeader />
