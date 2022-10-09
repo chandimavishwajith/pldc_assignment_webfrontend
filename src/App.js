@@ -7,6 +7,8 @@ import AddStudent from './pages/admin/AddStudent';
 import AddLecturer from './pages/admin/AddLecturer';
 import AdminViewStudent from './pages/admin/AdminViewStudent';
 import AdminViewLecturer from './pages/admin/AdminViewLecturer';
+import AdminViewModule from './pages/admin/AdminViewModule';
+import AdminViewContent from './pages/admin/AdminViewContent';
 
 import LecViewStudent from './pages/lecturer/LecViewStudent';
 import LecViewModuleList from './pages/lecturer/LecViewModuleList';
@@ -17,6 +19,8 @@ import LecViewAssignment from './pages/lecturer/LecViewAssignment';
 import AddMarks from './pages/lecturer/AddMarks';
 
 import StuViewModuleList from './pages/student/StuViewModuleList';
+import StuViewContent from './pages/student/StuViewContent';
+import StuUploadAssignment from './pages/student/StuUploadAssignment';
 
 
 import './App.css';
@@ -34,6 +38,8 @@ export default function App() {
         <Route path="/admin/AddLecturer" element={<AddLecturer />} />
         <Route path="/admin/AdminViewStudent" element={<AdminViewStudent />} />
         <Route path="/admin/AdminViewLecturer" element={<AdminViewLecturer />} />
+        <Route path="/admin/AdminViewModule" element={<AdminViewModule />} />
+        <Route path="/admin/AdminViewContent" element={<AdminViewContent />} />
 
         {/* Lecturer  */}
         <Route path="/lecturer/LecViewStudent" element={<LecViewStudent />} />
@@ -46,6 +52,8 @@ export default function App() {
 
         {/* Student  */}
         <Route path="/student/StuViewModuleList" element={<StuViewModuleList />} />
+        <Route path="/student/StuViewContent" element={<StuViewContent />} />
+        <Route path="/student/StuUploadAssignment" element={<StuUploadAssignment />} />
 
 
       </Routes>

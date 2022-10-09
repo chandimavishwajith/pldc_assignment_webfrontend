@@ -3,6 +3,11 @@ import Button from "react-bootstrap/Button";
 import * as rb from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fas);
 
 const Login = () => {
   const [posts, setPosts] = useState([]);
@@ -25,10 +30,13 @@ const Login = () => {
    
       <div className="login-content">
         <div className="login-content-container">
+        <h4 style={{color: '#ffffff',marginBottom: '2rem'}}>Learning Management System</h4>
+        
           <div className="login-content-header">
-            <h2>Login</h2>
+          <h4 style={{color: '#92a8e8',marginBottom: '1rem'}}><FontAwesomeIcon icon="fas fa-sign-in-alt" />&ensp;Login</h4>
+            
           </div>
-          <div className="d-grid gap-1">
+          <div className="d-grid gap-1" style={{marginTop: '1rem'}}>
             <rb.Form>
               
                 <rb.Form.Group className="mb-3" controlId="rb.FormBasicEmail">

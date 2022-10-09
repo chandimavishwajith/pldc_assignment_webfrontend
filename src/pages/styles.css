@@ -24,7 +24,7 @@
     justify-content: center;
     text-align: center;
 
-    gap: 25px;
+    /* gap: 25px; */
     overflow: auto;
     align-items: center;
     width: 25%;
@@ -36,8 +36,8 @@
 .login-content-header {
     color: #ffffff;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
 }
 
 .login-content-label {

@@ -16,13 +16,13 @@ const SideBar = () => {
 
   const [active, setActive] = useState(1);
 
-//   useEffect(() => {
-//     menu.forEach((element) => {
-//       if (location.pathname === element.path) {
-//         setActive(element.id);
-//       }
-//     });
-//   }, [location.pathname]);
+  //   useEffect(() => {
+  //     menu.forEach((element) => {
+  //       if (location.pathname === element.path) {
+  //         setActive(element.id);
+  //       }
+  //     });
+  //   }, [location.pathname]);
 
   //   const __navigate = (id) => {
   //     setActive(id);
@@ -62,10 +62,24 @@ const SideBar = () => {
               >
                 <FontAwesomeIcon icon="fas fa-th-list" />
                 <span className="sidebar-item-label">View Lecturer</span>
+              </Link>
+              <Link
+                to="/admin/AdminViewModule"
+                className="sidebar-item-active"
+              >
+                <FontAwesomeIcon icon="fas fa-stream" />
+                <span className="sidebar-item-label">View Module</span>
+              </Link>
+              <Link
+                to="/admin/AdminViewContent"
+                className="sidebar-item-active"
+              >
+                <FontAwesomeIcon icon="fas fa-th-list" />
+                <span className="sidebar-item-label">View Contents, Assignments</span>
               </Link> */}
               {/* Lecturer  */}
 
-              <Link
+              {/* <Link
                 to="/lecturer/LecViewStudent"
                 className="sidebar-item-active"
               >
@@ -106,7 +120,7 @@ const SideBar = () => {
               >
                 <FontAwesomeIcon icon="fas fa-calendar-plus" />
                 <span className="sidebar-item-label">Create Module</span>
-              </Link>
+              </Link> */}
 
               {/* Student  */}
               <Link
@@ -116,7 +130,15 @@ const SideBar = () => {
                 <FontAwesomeIcon icon="fas fa-stream" />
                 <span className="sidebar-item-label">View Modules</span>
               </Link>
-
+              <Link
+                to="/student/StuViewContent"
+                className="sidebar-item-active"
+              >
+                <FontAwesomeIcon icon="fas fa-th-list" />
+                <span className="sidebar-item-label">
+                  Contents and Assignments
+                </span>
+              </Link>
             </div>
             {/* ))} */}
           </div>
