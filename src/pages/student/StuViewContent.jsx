@@ -34,7 +34,7 @@ const StuViewContent = () => {
 
             <div className="dashboard-content-container">
               <div className="dashboard-content-header">
-                <h2>View Content</h2>
+                <h2>View Contents & Assignments</h2>
               </div>
 
               {/* <div class="card-deck">

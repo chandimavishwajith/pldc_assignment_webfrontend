@@ -62,13 +62,13 @@ const LecViewModuleList = () => {
                   </td>
                   
                   <td>
-                    <rb.Button
+                    {/* <rb.Button
                       variant="dark"
                       type="submit"
                       className="btn btn-sm"
                     >
                       Enroll
-                    </rb.Button>
+                    </rb.Button> */}
                   </td>
                 </>
               </tr>

@@ -42,64 +42,8 @@ const StuUploadAssignment = () => {
                         className="mb-3"
                         controlId="rb.FormBasicEmail"
                       >
-                        <rb.Form.Label>Lecture Topic</rb.Form.Label>
+                        <rb.Form.Label>Assignment Name</rb.Form.Label>
                         <rb.Form.Control type="email" />
-                      </rb.Form.Group>
-                    </Col>
-                    <Col md>
-                      <rb.Form.Group
-                        className="mb-3"
-                        controlId="rb.FormBasicEmail"
-                      >
-                        <rb.Form.Label>Lecture Description</rb.Form.Label>
-                        <rb.Form.Control
-                          as="textarea"
-                          style={{ height: "100px" }}
-                        />
-                      </rb.Form.Group>
-                    </Col>
-                  </Row>
-
-                  <Row className="g-2">
-                    <Col md>
-                      <rb.Form.Group
-                        className="mb-3"
-                        controlId="rb.FormBasicEmail"
-                      >
-                        <rb.Form.Label>Select Degree</rb.Form.Label>
-                        <rb.Form.Select aria-label="Floating label select example">
-                          <option>Select</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                        </rb.Form.Select>
-                      </rb.Form.Group>
-                    </Col>
-                    <Col md>
-                      <rb.Form.Group
-                        className="mb-3"
-                        controlId="rb.FormBasicEmail"
-                      >
-                        <rb.Form.Label>Select Batch</rb.Form.Label>
-                        <rb.Form.Select aria-label="Floating label select example">
-                          <option>Select</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                        </rb.Form.Select>
-                      </rb.Form.Group>
-                    </Col>
-                  </Row>
-                  <Row className="g-2">
-                    <Col md>
-                      <rb.Form.Group
-                        className="mb-3"
-                        controlId="rb.FormBasicEmail"
-                      >
-                        <rb.Form.Label>Select Faculty</rb.Form.Label>
-                        <rb.Form.Select aria-label="Floating label select example">
-                          <option>Select</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                        </rb.Form.Select>
                       </rb.Form.Group>
                     </Col>
                     <Col md>
@@ -116,6 +60,9 @@ const StuUploadAssignment = () => {
                       </rb.Form.Group>
                     </Col>
                   </Row>
+
+                  
+                  
                   <Col className="form-btn text-center">
                     <rb.Button
                       variant="secondary"

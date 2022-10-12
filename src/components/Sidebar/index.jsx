@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -13,20 +13,11 @@ library.add(fas);
 
 const SideBar = () => {
   const location = useLocation();
-
-  const [active, setActive] = useState(1);
-
-  //   useEffect(() => {
-  //     menu.forEach((element) => {
-  //       if (location.pathname === element.path) {
-  //         setActive(element.id);
-  //       }
-  //     });
-  //   }, [location.pathname]);
-
-  //   const __navigate = (id) => {
-  //     setActive(id);
-  //   };
+  const { pathname } = location;
+  //   const [active, setActive] = useState(1);
+  const splitLocationAdmin = pathname.split("admin/");
+  const splitLocationStudent = pathname.split("student/");
+  const splitLocationLecturer = pathname.split("lecturer/");
 
   return (
     <nav className="sidebar">
@@ -40,84 +31,127 @@ const SideBar = () => {
             {/* {menu.map((item, index) => ( */}
             <div key="1">
               {/* Admin  */}
-
-              {/* <Link to="/admin/AddStudent" className="sidebar-item-active">
+              {/* <Link
+                to="/admin/AddStudent"
+                className={
+                  splitLocationAdmin[1] === "AddStudent"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-user-plus" />
                 <span className="sidebar-item-label">Add Student</span>
               </Link>
-              <Link to="/admin/AddLecturer" className="sidebar-item-active">
+              <Link
+                to="/admin/AddLecturer"
+                className={
+                  splitLocationAdmin[1] === "AddLecturer"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-user-plus" />
                 <span className="sidebar-item-label">Add Lecturer</span>
               </Link>
               <Link
                 to="/admin/AdminViewStudent"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationAdmin[1] === "AdminViewStudent"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-th-list" />
-                <span className="sidebar-item-label">View Student</span>
+                <span className="sidebar-item-label">View Students</span>
               </Link>
               <Link
                 to="/admin/AdminViewLecturer"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationAdmin[1] === "AdminViewLecturer"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-th-list" />
-                <span className="sidebar-item-label">View Lecturer</span>
+                <span className="sidebar-item-label">View Lecturers</span>
               </Link>
               <Link
                 to="/admin/AdminViewModule"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationAdmin[1] === "AdminViewModule"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-stream" />
-                <span className="sidebar-item-label">View Module</span>
+                <span className="sidebar-item-label">View Modules</span>
               </Link>
               <Link
                 to="/admin/AdminViewContent"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationAdmin[1] === "AdminViewContent"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-th-list" />
-                <span className="sidebar-item-label">View Contents, Assignments</span>
+                <span className="sidebar-item-label">
+                  Contents, Assignments
+                </span>
               </Link> */}
               {/* Lecturer  */}
 
               {/* <Link
                 to="/lecturer/LecViewStudent"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationLecturer[1] === "LecViewStudent"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-th-list" />
-                <span className="sidebar-item-label">View Student</span>
+                <span className="sidebar-item-label">View Students</span>
               </Link>
               <Link
                 to="/lecturer/CreateContent"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationLecturer[1] === "CreateContent"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-pencil-ruler" />
                 <span className="sidebar-item-label">Create Content</span>
               </Link>
               <Link
                 to="/lecturer/LecUploadAssignment"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationLecturer[1] === "LecUploadAssignment"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-file-upload" />
                 <span className="sidebar-item-label">Upload Assignment</span>
               </Link>
               <Link
                 to="/lecturer/LecViewAssignment"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationLecturer[1] === "LecViewAssignment"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-file-invoice" />
-                <span className="sidebar-item-label">View Assignment</span>
+                <span className="sidebar-item-label">View Assignments</span>
               </Link>
               <Link
                 to="/lecturer/LecViewModuleList"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationLecturer[1] === "LecViewModuleList"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-stream" />
                 <span className="sidebar-item-label">View Modules</span>
               </Link>
               <Link
                 to="/lecturer/LecCreateModule"
-                className="sidebar-item-active"
-              >
+                className={
+                  splitLocationLecturer[1] === "LecCreateModule"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }>
                 <FontAwesomeIcon icon="fas fa-calendar-plus" />
                 <span className="sidebar-item-label">Create Module</span>
               </Link> */}
@@ -125,14 +159,22 @@ const SideBar = () => {
               {/* Student  */}
               <Link
                 to="/student/StuViewModuleList"
-                className="sidebar-item-active"
+                className={
+                  splitLocationStudent[1] === "StuViewModuleList"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }
               >
                 <FontAwesomeIcon icon="fas fa-stream" />
                 <span className="sidebar-item-label">View Modules</span>
               </Link>
               <Link
                 to="/student/StuViewContent"
-                className="sidebar-item-active"
+                className={
+                  splitLocationStudent[1] === "StuViewContent"
+                    ? "sidebar-item-active"
+                    : "sidebar-item"
+                }
               >
                 <FontAwesomeIcon icon="fas fa-th-list" />
                 <span className="sidebar-item-label">
