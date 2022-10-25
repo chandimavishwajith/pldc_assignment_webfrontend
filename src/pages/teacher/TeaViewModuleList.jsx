@@ -39,10 +39,11 @@ const TeaViewModuleList = () => {
           <rb.Table className="table table-hover table-bordered" responsive>
             <thead>
               <th>Module ID</th>
+              <th>Module Code</th>
               <th>Module Name</th>
-              <th>Teacher Name</th>
-              <th>Sessions</th>
-              <th>Actions</th>
+              <th>Submitted Date</th>
+              <th>Submitted Date</th>
+              
             </thead>
 
             <tbody>
@@ -60,8 +61,10 @@ const TeaViewModuleList = () => {
                   <td>
                     <span>dhftjftj</span>
                   </td>
-                  
                   <td>
+                    <span>dhftjftj</span>
+                  </td>
+                  
                     {/* <rb.Button
                       variant="dark"
                       type="submit"
@@ -69,7 +72,7 @@ const TeaViewModuleList = () => {
                     >
                       Enroll
                     </rb.Button> */}
-                  </td>
+                 
                 </>
               </tr>
             </tbody>

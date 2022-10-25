@@ -37,10 +37,11 @@ const AdminViewModule = () => {
               <rb.Table className="table table-hover table-bordered" responsive>
                 <thead>
                   <th>Module ID</th>
-                  <th>Module Name</th>
                   <th>Module ID</th>
                   <th>Module Name</th>
-                  <th>Date</th>
+                  
+                  <th>Submitted Date</th>
+                  <th>Module Description</th>
                   <th>Actions</th>
                 </thead>
 

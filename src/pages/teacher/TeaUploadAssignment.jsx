@@ -64,51 +64,13 @@ const TeaUploadAssignment = () => {
                 </Col>
                 <Col md>
                   <rb.Form.Group className="mb-3" controlId="rb.FormBasicEmail">
-                    <rb.Form.Label>Select Degree</rb.Form.Label>
-                    <rb.Form.Select aria-label="Floating label select example">
-                      <option>Select</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      
-                    </rb.Form.Select>
-                  </rb.Form.Group>
-                </Col>
-                
-                </Row>
-                <Row className="g-2">
-                <Col md>
-                  <rb.Form.Group className="mb-3" controlId="rb.FormBasicEmail">
-                    <rb.Form.Label>Select Batch</rb.Form.Label>
-                    <rb.Form.Select aria-label="Floating label select example">
-                      <option>Select</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      
-                    </rb.Form.Select>
-                  </rb.Form.Group>
-                </Col>
-                <Col md>
-                  <rb.Form.Group className="mb-3" controlId="rb.FormBasicEmail">
-                    <rb.Form.Label>Select Faculty</rb.Form.Label>
-                    <rb.Form.Select aria-label="Floating label select example">
-                      <option>Select</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      
-                    </rb.Form.Select>
-                  </rb.Form.Group>
-                </Col>
-                
-              </Row>
-              <Row className="g-2">
-                
-                <Col md>
-                  <rb.Form.Group className="mb-3" controlId="rb.FormBasicEmail">
                     <rb.Form.Label>Upload Files</rb.Form.Label>
                     <rb.Form.Control type="file" multiple accept='application/pdf,.docx,.csv,image/*'/>
                   </rb.Form.Group>
                 </Col>
-              </Row>
+                </Row>
+                
+              
               <Col className="form-btn text-center">
                     <rb.Button
                       variant="secondary"

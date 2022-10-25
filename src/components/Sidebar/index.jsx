@@ -31,7 +31,7 @@ const SideBar = () => {
             {/* {menu.map((item, index) => ( */}
             <div key="1">
               {/* Admin  */}
-              {/* <Link
+              <Link
                 to="/admin/AddStudent"
                 className={
                   splitLocationAdmin[1] === "AddStudent"
@@ -92,7 +92,7 @@ const SideBar = () => {
                 <span className="sidebar-item-label">
                   Contents, Assignments
                 </span>
-              </Link> */}
+              </Link>
               {/* Teacher  */}
 
               {/* <Link
@@ -157,7 +157,7 @@ const SideBar = () => {
               </Link> */}
 
               {/* Student  */}
-              <Link
+              {/* <Link
                 to="/student/StuViewModuleList"
                 className={
                   splitLocationStudent[1] === "StuViewModuleList"
@@ -180,7 +180,9 @@ const SideBar = () => {
                 <span className="sidebar-item-label">
                   Contents and Assignments
                 </span>
-              </Link>
+              </Link> */}
+
+
             </div>
             {/* ))} */}
           </div>
