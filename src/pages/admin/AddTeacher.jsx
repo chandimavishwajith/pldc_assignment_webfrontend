@@ -8,7 +8,7 @@ import SideBar from "../../components/Sidebar";
 import "../styles.css";
 
 
-const AddLecturer = () => {
+const AddTeacher = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const AddLecturer = () => {
 
             <div className="dashboard-content-container">
               <div className="dashboard-content-header">
-                <h2>Add Lecturer</h2>
+                <h2>Add Teacher</h2>
               </div>
               <div className="d-grid gap-3">
                 <rb.Form>
@@ -171,4 +171,4 @@ const AddLecturer = () => {
   );
 };
 
-export default AddLecturer;
+export default AddTeacher;

@@ -17,7 +17,7 @@ const SideBar = () => {
   //   const [active, setActive] = useState(1);
   const splitLocationAdmin = pathname.split("admin/");
   const splitLocationStudent = pathname.split("student/");
-  const splitLocationLecturer = pathname.split("lecturer/");
+  const splitLocationTeacher = pathname.split("teacher/");
 
   return (
     <nav className="sidebar">
@@ -42,14 +42,14 @@ const SideBar = () => {
                 <span className="sidebar-item-label">Add Student</span>
               </Link>
               <Link
-                to="/admin/AddLecturer"
+                to="/admin/AddTeacher"
                 className={
-                  splitLocationAdmin[1] === "AddLecturer"
+                  splitLocationAdmin[1] === "AddTeacher"
                     ? "sidebar-item-active"
                     : "sidebar-item"
                 }>
                 <FontAwesomeIcon icon="fas fa-user-plus" />
-                <span className="sidebar-item-label">Add Lecturer</span>
+                <span className="sidebar-item-label">Add Teacher</span>
               </Link>
               <Link
                 to="/admin/AdminViewStudent"
@@ -62,14 +62,14 @@ const SideBar = () => {
                 <span className="sidebar-item-label">View Students</span>
               </Link>
               <Link
-                to="/admin/AdminViewLecturer"
+                to="/admin/AdminViewTeacher"
                 className={
-                  splitLocationAdmin[1] === "AdminViewLecturer"
+                  splitLocationAdmin[1] === "AdminViewTeacher"
                     ? "sidebar-item-active"
                     : "sidebar-item"
                 }>
                 <FontAwesomeIcon icon="fas fa-th-list" />
-                <span className="sidebar-item-label">View Lecturers</span>
+                <span className="sidebar-item-label">View Teachers</span>
               </Link>
               <Link
                 to="/admin/AdminViewModule"
@@ -93,12 +93,12 @@ const SideBar = () => {
                   Contents, Assignments
                 </span>
               </Link> */}
-              {/* Lecturer  */}
+              {/* Teacher  */}
 
               {/* <Link
-                to="/lecturer/LecViewStudent"
+                to="/teacher/LecViewStudent"
                 className={
-                  splitLocationLecturer[1] === "LecViewStudent"
+                  splitLocationTeacher[1] === "LecViewStudent"
                     ? "sidebar-item-active"
                     : "sidebar-item"
                 }>
@@ -106,9 +106,9 @@ const SideBar = () => {
                 <span className="sidebar-item-label">View Students</span>
               </Link>
               <Link
-                to="/lecturer/CreateContent"
+                to="/teacher/CreateContent"
                 className={
-                  splitLocationLecturer[1] === "CreateContent"
+                  splitLocationTeacher[1] === "CreateContent"
                     ? "sidebar-item-active"
                     : "sidebar-item"
                 }>
@@ -116,9 +116,9 @@ const SideBar = () => {
                 <span className="sidebar-item-label">Create Content</span>
               </Link>
               <Link
-                to="/lecturer/LecUploadAssignment"
+                to="/teacher/LecUploadAssignment"
                 className={
-                  splitLocationLecturer[1] === "LecUploadAssignment"
+                  splitLocationTeacher[1] === "LecUploadAssignment"
                     ? "sidebar-item-active"
                     : "sidebar-item"
                 }>
@@ -126,9 +126,9 @@ const SideBar = () => {
                 <span className="sidebar-item-label">Upload Assignment</span>
               </Link>
               <Link
-                to="/lecturer/LecViewAssignment"
+                to="/teacher/LecViewAssignment"
                 className={
-                  splitLocationLecturer[1] === "LecViewAssignment"
+                  splitLocationTeacher[1] === "LecViewAssignment"
                     ? "sidebar-item-active"
                     : "sidebar-item"
                 }>
@@ -136,9 +136,9 @@ const SideBar = () => {
                 <span className="sidebar-item-label">View Assignments</span>
               </Link>
               <Link
-                to="/lecturer/LecViewModuleList"
+                to="/teacher/LecViewModuleList"
                 className={
-                  splitLocationLecturer[1] === "LecViewModuleList"
+                  splitLocationTeacher[1] === "LecViewModuleList"
                     ? "sidebar-item-active"
                     : "sidebar-item"
                 }>
@@ -146,9 +146,9 @@ const SideBar = () => {
                 <span className="sidebar-item-label">View Modules</span>
               </Link>
               <Link
-                to="/lecturer/LecCreateModule"
+                to="/teacher/LecCreateModule"
                 className={
-                  splitLocationLecturer[1] === "LecCreateModule"
+                  splitLocationTeacher[1] === "LecCreateModule"
                     ? "sidebar-item-active"
                     : "sidebar-item"
                 }>

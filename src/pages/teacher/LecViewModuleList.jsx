@@ -40,7 +40,7 @@ const LecViewModuleList = () => {
             <thead>
               <th>Module ID</th>
               <th>Module Name</th>
-              <th>Lecturer Name</th>
+              <th>Teacher Name</th>
               <th>Sessions</th>
               <th>Actions</th>
             </thead>

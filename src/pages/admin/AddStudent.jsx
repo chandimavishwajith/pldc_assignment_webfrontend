@@ -51,7 +51,7 @@ const AddStudent = () => {
                         className="mb-3"
                         controlId="rb.FormBasicEmail"
                       >
-                        <rb.Form.Label>First Name</rb.Form.Label>
+                        <rb.Form.Label>Last Name</rb.Form.Label>
                         <rb.Form.Control type="email" />
                       </rb.Form.Group>
                     </Col>

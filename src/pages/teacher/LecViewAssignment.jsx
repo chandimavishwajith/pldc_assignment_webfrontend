@@ -68,7 +68,7 @@ const LecViewAssignment = () => {
                   <td>
                     
                     
-                    <Link to="/lecturer/AddMarks">
+                    <Link to="/teacher/AddMarks">
                       <rb.Button
                         variant="warning"
                         type="submit"
