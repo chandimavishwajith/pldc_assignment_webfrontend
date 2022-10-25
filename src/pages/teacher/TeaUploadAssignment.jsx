@@ -7,7 +7,7 @@ import DashboardHeader from "../../components/DashboardHeader";
 import SideBar from '../../components/Sidebar';
 import "../styles.css";
 
-const LecUploadAssignment = () => {
+const TeaUploadAssignment = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -127,4 +127,4 @@ const LecUploadAssignment = () => {
   );
 };
 
-export default LecUploadAssignment;
+export default TeaUploadAssignment;

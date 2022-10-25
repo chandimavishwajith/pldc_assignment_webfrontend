@@ -41,7 +41,7 @@ const StuViewModuleList = () => {
               <th>Module ID</th>
               <th>Module Name</th>
               <th>Teacher Name</th>
-              <th>Sessions</th>
+              
               <th>Actions</th>
             </thead>
 
@@ -57,9 +57,7 @@ const StuViewModuleList = () => {
                   <td>
                     <span>hdhthth</span>
                   </td>
-                  <td>
-                    <span>dhftjftj</span>
-                  </td>
+                 
                   
                   <td>
                     <rb.Button
@@ -67,7 +65,7 @@ const StuViewModuleList = () => {
                       type="submit"
                       className="btn btn-sm"
                     >
-                      Enroll
+                      View
                     </rb.Button>
                   </td>
                 </>

@@ -90,10 +90,10 @@ const StuViewContent = () => {
                 >
                   <Card.Body>
                     <Card.Title style={{ color: "#344470" }}>
-                      CGV: Lecture 01
+                      Maths: Trigonometry
                     </Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">
-                      lecture 01 title
+                      Find length of a circle
                     </Card.Subtitle>
 
                     <rb.Button
@@ -116,10 +116,10 @@ const StuViewContent = () => {
                   <Card.Body>
                   
                     <Card.Title style={{ color: "#344470" }}>
-                      CGV: Assignment 01
+                      Trigonometry: Assignment 01
                     </Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">
-                      assignment 01 title
+                    Find length of a circle
                     </Card.Subtitle>
                     <Card.Footer style={{ color: "#dc0000" }}>Marks: 56</Card.Footer>
                     <rb.Button

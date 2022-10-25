@@ -72,7 +72,7 @@ const AddTeacher = () => {
                         className="mb-3"
                         controlId="rb.FormBasicEmail"
                       >
-                        <rb.Form.Label>Student Email</rb.Form.Label>
+                        <rb.Form.Label>Email</rb.Form.Label>
                         <rb.Form.Control type="email" />
                       </rb.Form.Group>
                     </Col>
@@ -98,18 +98,20 @@ const AddTeacher = () => {
                     </Col>
                   </Row>
                   <Row className="g-2">
-                    <Col md>
+                  <Col md>
                       <rb.Form.Group
                         className="mb-3"
                         controlId="rb.FormBasicEmail"
                       >
-                        <rb.Form.Label>Address</rb.Form.Label>
-                        <rb.Form.Control
-                          as="textarea"
-                          style={{ height: "100px" }}
-                        />
+                        <rb.Form.Label>Select Module</rb.Form.Label>
+                        <rb.Form.Select aria-label="Floating label select example">
+                          <option>Select</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                        </rb.Form.Select>
                       </rb.Form.Group>
                     </Col>
+                    
                     <Col md>
                       <rb.Form.Group
                         className="mb-3"
@@ -125,32 +127,19 @@ const AddTeacher = () => {
                     </Col>
                   </Row>
                   <Row className="g-2">
-                    <Col md>
+                  <Col md>
                       <rb.Form.Group
                         className="mb-3"
                         controlId="rb.FormBasicEmail"
                       >
-                        <rb.Form.Label>Select Faculty</rb.Form.Label>
-                        <rb.Form.Select aria-label="Floating label select example">
-                          <option>Select</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                        </rb.Form.Select>
+                        <rb.Form.Label>Address</rb.Form.Label>
+                        <rb.Form.Control
+                          as="textarea"
+                          style={{ height: "100px" }}
+                        />
                       </rb.Form.Group>
                     </Col>
-                    <Col md>
-                      <rb.Form.Group
-                        className="mb-3"
-                        controlId="rb.FormBasicEmail"
-                      >
-                        <rb.Form.Label>Select Module</rb.Form.Label>
-                        <rb.Form.Select aria-label="Floating label select example">
-                          <option>Select</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                        </rb.Form.Select>
-                      </rb.Form.Group>
-                    </Col>
+                    
                   </Row>
                   <Col className="form-btn text-center">
                     <rb.Button

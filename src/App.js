@@ -10,12 +10,12 @@ import AdminViewTeacher from './pages/admin/AdminViewTeacher';
 import AdminViewModule from './pages/admin/AdminViewModule';
 import AdminViewContent from './pages/admin/AdminViewContent';
 
-import LecViewStudent from './pages/teacher/LecViewStudent';
-import LecViewModuleList from './pages/teacher/LecViewModuleList';
+import TeaViewStudent from './pages/teacher/TeaViewStudent';
+import TeaViewModuleList from './pages/teacher/TeaViewModuleList';
 import CreateContent from './pages/teacher/CreateContent';
-import LecCreateModule from './pages/teacher/LecCreateModule';
-import LecUploadAssignment from './pages/teacher/LecUploadAssignment';
-import LecViewAssignment from './pages/teacher/LecViewAssignment';
+import TeaCreateModule from './pages/teacher/TeaCreateModule';
+import TeaUploadAssignment from './pages/teacher/TeaUploadAssignment';
+import TeaViewAssignment from './pages/teacher/TeaViewAssignment';
 import AddMarks from './pages/teacher/AddMarks';
 
 import StuViewModuleList from './pages/student/StuViewModuleList';
@@ -42,13 +42,13 @@ export default function App() {
         <Route path="/admin/AdminViewContent" element={<AdminViewContent />} />
 
         {/* Teacher  */}
-        <Route path="/teacher/LecViewStudent" element={<LecViewStudent />} />
+        <Route path="/teacher/TeaViewStudent" element={<TeaViewStudent />} />
         <Route path="/teacher/CreateContent" element={<CreateContent />} />
-        <Route path="/teacher/LecCreateModule" element={<LecCreateModule />} />
-        <Route path="/teacher/LecUploadAssignment" element={<LecUploadAssignment />} />
-        <Route path="/teacher/LecViewAssignment" element={<LecViewAssignment />} />
+        <Route path="/teacher/TeaCreateModule" element={<TeaCreateModule />} />
+        <Route path="/teacher/TeaUploadAssignment" element={<TeaUploadAssignment />} />
+        <Route path="/teacher/TeaViewAssignment" element={<TeaViewAssignment />} />
         <Route path="/teacher/AddMarks" element={<AddMarks />} />
-        <Route path="/teacher/LecViewModuleList" element={<LecViewModuleList />} />
+        <Route path="/teacher/TeaViewModuleList" element={<TeaViewModuleList />} />
 
         {/* Student  */}
         <Route path="/student/StuViewModuleList" element={<StuViewModuleList />} />

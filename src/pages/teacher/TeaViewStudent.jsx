@@ -7,7 +7,7 @@ import DashboardHeader from "../../components/DashboardHeader";
 import SideBar from "../../components/Sidebar";
 import "../styles.css";
 
-const LecViewStudent = () => {
+const TeaViewStudent = () => {
   const [posts, setPosts] = useState([]);
   const [attendence, setAttendence] = useState([]);
   useEffect(() => {
@@ -37,10 +37,11 @@ const LecViewStudent = () => {
               <rb.Table className="table table-hover table-bordered" responsive>
                 <thead>
                   <th>Student ID</th>
-                  <th>Student Name</th>
-                  <th>Module ID</th>
-                  <th>Module Name</th>
-                  <th>Date</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Date of Birth</th>
+                  <th>Address</th>
+                  <th>Select Module</th>
                   
                 </thead>
 
@@ -48,21 +49,23 @@ const LecViewStudent = () => {
                   <tr className="post-card">
                     <>
                       <td>
-                        <span>hfhrehrh</span>
+                        <span>001</span>
                       </td>
                       <td>
-                        <span>hrherhdh</span>
+                        <span>Sahan</span>
                       </td>
                       <td>
-                        <span>hdhthth</span>
+                        <span>Perera</span>
                       </td>
                       <td>
-                        <span>dhftjftj</span>
+                        <span>2001.03.06</span>
                       </td>
                       <td>
-                        <span>tfjjyk</span>
+                        <span>Colombo, Sri Lanka</span>
                       </td>
-                      
+                      <td>
+                        <span>Maths</span>
+                      </td>
                     </>
                   </tr>
                 </tbody>
@@ -75,4 +78,4 @@ const LecViewStudent = () => {
   );
 };
 
-export default LecViewStudent;
+export default TeaViewStudent;

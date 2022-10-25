@@ -93,7 +93,7 @@ const AddMarks = () => {
                       Submit
                     </rb.Button>
                     &emsp;
-                    <Link to="/teacher/LecViewAssignment">
+                    <Link to="/teacher/TeaViewAssignment">
                       <rb.Button
                         variant="dark"
                         type="submit"

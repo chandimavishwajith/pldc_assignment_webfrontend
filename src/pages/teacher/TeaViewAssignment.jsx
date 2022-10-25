@@ -8,7 +8,7 @@ import SideBar from '../../components/Sidebar';
 import "../styles.css";
 
 
-const LecViewAssignment = () => {
+const TeaViewAssignment = () => {
   const [posts, setPosts] = useState([]);
   const [attendence, setAttendence] = useState([]);
   useEffect(() => {
@@ -89,4 +89,4 @@ const LecViewAssignment = () => {
   );
 };
 
-export default LecViewAssignment;
+export default TeaViewAssignment;

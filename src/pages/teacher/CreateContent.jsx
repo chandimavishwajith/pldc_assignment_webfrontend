@@ -42,7 +42,7 @@ const CreateContent = () => {
                         className="mb-3"
                         controlId="rb.FormBasicEmail"
                       >
-                        <rb.Form.Label>Lecture Topic</rb.Form.Label>
+                        <rb.Form.Label>Module Topic</rb.Form.Label>
                         <rb.Form.Control type="email" />
                       </rb.Form.Group>
                     </Col>
@@ -51,7 +51,7 @@ const CreateContent = () => {
                         className="mb-3"
                         controlId="rb.FormBasicEmail"
                       >
-                        <rb.Form.Label>Lecture Description</rb.Form.Label>
+                        <rb.Form.Label>Module Description</rb.Form.Label>
                         <rb.Form.Control
                           as="textarea"
                           style={{ height: "100px" }}

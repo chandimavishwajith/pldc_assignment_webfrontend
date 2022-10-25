@@ -8,7 +8,7 @@ import SideBar from '../../components/Sidebar';
 import "../styles.css";
 
 
-const LecViewModuleList = () => {
+const TeaViewModuleList = () => {
   const [posts, setPosts] = useState([]);
   const [attendence, setAttendence] = useState([]);
   useEffect(() => {
@@ -81,4 +81,4 @@ const LecViewModuleList = () => {
   );
 };
 
-export default LecViewModuleList;
+export default TeaViewModuleList;

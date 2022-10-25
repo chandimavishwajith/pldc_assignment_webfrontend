@@ -7,7 +7,7 @@ import DashboardHeader from "../../components/DashboardHeader";
 import SideBar from "../../components/Sidebar";
 import "../styles.css";
 
-const LecCreateModule = () => {
+const TeaCreateModule = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -123,4 +123,4 @@ const LecCreateModule = () => {
   );
 };
 
-export default LecCreateModule;
+export default TeaCreateModule;
